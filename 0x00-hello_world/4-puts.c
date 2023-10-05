@@ -1,5 +1,8 @@
 #include <stdio.h>
-/* Main Function is where code Exxecution takes place */
+/**
+ *  * main - main block
+ *   * Return: 0
+ *    */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
