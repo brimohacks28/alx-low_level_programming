@@ -2,7 +2,8 @@
 	/**
 	 * main - Entry Point of the Code
 	 *
-	 * Description :This Program  generates a random number and prints whether it is a positive , negative or a zero
+	 * Description :This Program  generates a random number and
+	 * prints whether it is a positive , negative or a zero
 	 *
 	 * Return : 0 always sucess.
 	 */
