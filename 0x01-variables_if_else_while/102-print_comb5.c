@@ -1,7 +1,13 @@
 	#include <stdio.h>
 	/**
-	 *main-Code
-	*/
+	 *main - Entry point of the program
+	 *Description: This program generates a random number and
+	 *prints whether it's positive, negative, or zero.
+	 *  
+	 *Return: Always 0 (success)
+	 *        
+	 */
+
 	int main(void)
 	{
 		int i;
