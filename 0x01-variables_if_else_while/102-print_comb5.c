@@ -1,9 +1,9 @@
 	#include <stdio.h>
+	#include <stdlib.h>
 	/**
 	 * main - Entry Point of the Code
 	 *
-	 * Description :This Program  generates a random number and
-	 * prints whether it is a positive , negative or a zero
+	 * Description :printing all possible combinations of two two-digit numbers.
 	 *
 	 * Return : 0 always sucess.
 	 */
