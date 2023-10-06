@@ -1,9 +1,7 @@
 	#include <stdio.h>
 	/**
-	 *main(void)- Where program Execution Starts. 
-	 *Returns a 0;
-	 *
-	 */
+	 *main-Code
+	*/
 	int main(void)
 	{
 		int i;
