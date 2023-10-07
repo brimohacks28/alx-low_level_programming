@@ -1,6 +1,6 @@
 	#include <stdio.h>
 	/**
-	 * main -Code Execution Begins
+	 * main - Code Execution Begins
 	 * Description - Program to print alphabetic numbers
 	 *
 	 */
