@@ -1,20 +1,15 @@
-#include <stdio.h>
-#include <time.h>
-#include<stdlib.h>
-/**
- * main - Where the Code Execution Begins
- * Description of the Code: Prints all single digit nmumbers of base 10 starting from  0, folowed byu a new line
- *
- * Return 0;
- * j variable used
- */
-int main (void)
-{
-	char j= 'z';
-	while (j >= 'a')
+	#include <stdio.h>
+	/**
+	 * main -Code Execution Begins
+	 * Description - Program to print alphabetic numbers
+	 *
+	 */
+	int main(void)
 	{
-		putchar(j);
+		char ch;
+
+		for (ch = 'z'; ch >= 'a' ; ch--)
+			putchar(ch);
+		putchar('\n');
+		return (0);
 	}
-	putchar('\n');
-	return (0);
-}
