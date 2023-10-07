@@ -2,8 +2,8 @@
 /**
  * main - Execution of the Code begins here.
  * Description:Print the letters of the Alphabet from A to Z
- * return 0;
- * return 0 is sucess.
+ * Return : always returns 0
+ *
  */
 int main(void)
 {
