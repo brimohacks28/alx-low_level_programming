@@ -1,11 +1,11 @@
 	#include <stdio.h>
 	#include <stdlib.h>
 	/**
-	 * main - Entry Point of the Code
+	 *main - Entry Point of the Code
 	 *
-	 * Description :printing all possible combinations of two two-digit numbers.
+	 *Description :printing possible combinations of 2 two-digit numbers.
 	 *
-	 * Return : 0 always sucess.
+	 *Return : 0 always sucess.
 	 */
 	int main(void)
 	{
