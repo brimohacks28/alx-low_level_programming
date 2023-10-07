@@ -1,11 +1,9 @@
 	#include <stdio.h>
 	/**
-	 * main - Entry point of the program.
+	 * main -main block where code begins
+	 * Description: Printing alphabets ascending
+	 * Return: 0
 	 *
-	 * Description - Program to print alphabetic numbers
-	 *
-	 * Return 0;
-	 * Return value is always 0 (sucess).
 	 */
 	int main(void)
 	{
