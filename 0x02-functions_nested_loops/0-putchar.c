@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - Code Execution Begins
  * Return: 0 shows sucess.
@@ -7,13 +6,14 @@
  */
 int main(void)
 {
-	char text[] = "_putchar\n";
+	char t[9] = "_putchar";
+	int j = 0;
 
-	for (int j = 0; text[j]; j++)
+	while (j < 8)
 	{
-		_putchar(text[i]);
+		_putchar(t[j]);
+		j++;
 	}
+	_putchar('\n');
 	return (0);
 }
-
-
