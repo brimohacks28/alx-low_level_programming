@@ -1,13 +1,19 @@
-#include "main.h:"
+#include "main.h"
 
 /**
  * main - Code Execution Begins
  * Return: 0 shows sucess.
+ *
  */
-
 int main(void)
 {
-	putchar(" _putchar ");
-	putchar('\n');
+	char text[] = "_putchar\n";
+
+	for (int j = 0; text[j]; j++)
+	{
+		_putchar(text[i]);
+	}
 	return (0);
 }
+
+
