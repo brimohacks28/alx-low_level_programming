@@ -6,28 +6,32 @@
  */
 int main(void)
 {
-	int j;
+	int j = 1;
 
-	for (j = 1; j <= 100; j++)
+	while (j <= 100)
 	{
-		if (j % 3 == 0 || j % 5 == 0)
+		if (j % 3 == 0 && j % 5 == 0)
 		{
-			if (j % 3 == 0)
-			{
-				printf("Fizz");
-			}
-			if (j % 5 == 0)
-			{
-				printf("Buzz");
-			}
-		} else
+			printf("FizzBuzz");
+		}
+		else if (j % 3 == 0)
 		{
-			printf("%d", j);
+			printf("Fizz");
+		}
+		else if (j % 5 == 0)
+		{
+			printf("Buzz");
+		}
+		else
+		{
+			printf("%i", j);
 		}
 		if (j != 100)
-			printf(" ");
+		{
+			putchar(' ');
+		}
+		j++;
 	}
-	printf('\n');
+	putchar('\n');
 	return (0);
 }
-
