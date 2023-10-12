@@ -1,9 +1,7 @@
 #include "main.h"
 /**
- * _isdigit -checks for digits entered
- * print_numbers - prints numbers
- *
- * Return: 0 or 1 is sucess.
+ * print_numbers - prints numbers in a sequence
+ * Return: 0 code Sucess.
  */
 void print_numbers(void)
 {
