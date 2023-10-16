@@ -1,8 +1,10 @@
 #include "main.h"
 /*
- * swap_int - swap variable values
+ * swap_int - pointers declaration
  * @a: First Pointer
  * @b: Second Pointer
+ * c: integer 1
+ * d: integer d
  * Return: void
  *
  */
