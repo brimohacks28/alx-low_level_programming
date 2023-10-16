@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * puts_half - prints a string plus new line
- *
+ * puts_half - (char *str)
  * @str: pointer to the string to print
  * Return: void
  */
@@ -21,7 +20,7 @@ void puts_half(char *str)
 		{
 			_putchar(str[j]);
 		}
-	} else if (len % 2)
+	} else if (lenth % 2)
 	{
 		for (n = (length - 1) / 2; n < length - 1; j++)
 		{
