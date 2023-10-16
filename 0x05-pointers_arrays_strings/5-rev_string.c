@@ -1,4 +1,6 @@
 #include "main.h"
+#include "2-strlen.c"
+
 /**
  * rev_string - prints reversed string, followed by a new line
  * @s: pointer to the string to print
@@ -6,21 +8,14 @@
  */
 void rev_string(char *s)
 {
-	int l, b, c;
-	char rev;
+	int a;
+	char b;
 
-	for (l = 0; s[l] != '\0'; len++)
-	;
-
-	b = 0;
-
-	c = l / 2;
-
-	while (c--)
+	for (a = 0; a < _strlen(s) / 2; a++)
 	{
-		rev = s[l - b - 1];
-		s[l - b - 1] = s[b];
-		s[b] = rev;
-		b++;
+		b = s[a];
+		s[a] = s[_strlen(s) - a - 1];
+		s[_strlen(s) - i - 1] = b;
 	}
 }
+
