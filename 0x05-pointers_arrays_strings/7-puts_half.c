@@ -1,12 +1,13 @@
 #include "main.h"
 /**
- * puts_half(char *str)
+ * puts_half - prints a string plus new line
+ *
  * @str: pointer to the string to print
  * Return: void
  */
 void puts_half(char *str)
 {
-	int length, n , j;
+	int length, n, j;
 
 	length = 0;
 
