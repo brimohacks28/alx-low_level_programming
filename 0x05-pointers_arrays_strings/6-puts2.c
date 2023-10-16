@@ -5,7 +5,7 @@
  *
  * Return: void
  */
-void puts2(chat *str)
+void puts2(char *str)
 {
 	int j = 0;
 
