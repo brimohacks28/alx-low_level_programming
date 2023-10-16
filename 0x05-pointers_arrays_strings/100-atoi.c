@@ -17,20 +17,13 @@ int _atoi(char *s)
 			b = b * -1;
 		if (s[a] >= '0' && s[a] <= '9')
 		{
-			if (s[a] > '0' && s[a] <= '9')
-			{
-				b = b * -1;
-			if (s[a] >= '0' && s[a] <= '9')
-			{
-				rep = res * 10;
-				rep -= (s[i] - '0');
-				num = 1;
-			}
-			else if (num == 1)
-				break;
-			}
-			rep = b * rep;
-			return (rep);
+			rep = rep * 10;
+			rep -= (s[a] - '0');
+			num = 1;
 		}
-	}
+		else if (num == 1)
+			break;
+		}
+		rep = b * rep;
+		return (rep);
 }
