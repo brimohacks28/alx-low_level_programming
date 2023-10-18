@@ -13,6 +13,6 @@ void reverse_array(int *a, int n)
 	{
 		a[n - j - 1] += a[j];
 		a[j] = a[n - j - 1] - a[j];
-		a[n - j - 1] = a[n - j - j] - a[j];
+		a[n - j - 1] = a[n - j - 1] - a[j];
 	}
 }
