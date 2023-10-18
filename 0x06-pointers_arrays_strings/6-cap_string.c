@@ -6,37 +6,40 @@
  */
 char *cap_string(char *str)
 {
-	char sep[] = ",\t;n; .!?\"(){}";
-	int flag, j, jj;
-
-	for (j = 0; str[j] != '\0'; j++)
+	int i = 0;
+	/*iterate through our array values*/
+	while (s[i] != '\0')
 	{
-		flag = 0;
-
-		if (j == 0)
+		/*iterate through our arrat values*/
+		while (s[i] != '\0')
 		{
-			flag = 1;
-		}
-		else
-		{
-			for (jj = 0; sep[jj] != '\0'; jj++)
+			/*checking for any lowercase letters*/
+			if (s[i] >= 97 && s[i] <= 122)
 			{
-				if (str[j - 1] == sep[jj])
+				/**
+				 * if null character present
+				 * change value to capital
+				 */
+				if (i == 0)
 				{
-					flag = 1;
-					break;
+					s[i] -= 32;
+				}
+				/**
+				 * if we find any character matching the
+				 * below before any letter is capitalized
+				 *
+				 *
+				 */
+				if (s[i - 1] == 32 || s[i - 1] == 9 || s[i - 1] == 10 ||
+						s[i - 1] == 44 || s[i - 1] == 59 || s[i - 1] == 46 ||
+						s[i - 1] == 33 || s[i - 1] == 63 || s[i - 1] == 34 ||
+						s[i - 1] == 40 || s[i - 1] == 41 || s[i - 1] == 124)
+				{
+					s[i] -= 32;
 				}
 			}
+			i++;
 		}
-
-		if (flag == 1)
-		{
-			if (str[j] <= 'z' && str[j] >= 'a')
-			{
-				str[j] -= ('a' - 'A');
-			}
-		}
+		return (s);
 	}
-	return (str);
 }
-
