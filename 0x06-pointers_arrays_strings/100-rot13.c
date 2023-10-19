@@ -15,9 +15,14 @@ char *rot13(char *s)
 	{
 		for (jj = 0; jj < 54; jj++)
 		{
+			if (((s[j] <= 'z' && s[j] >= 'a') || (s[j] <= 'Z' && s[j] >= 'A'))
+			&& s[j] == input[jj])
+		{
 			s[j] = output[jj];
 			break;
 		}
 	}
 	return (s);
+	}
+
 }
