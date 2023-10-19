@@ -1,9 +1,7 @@
 #include <stdio.h>
 /**
- * main - code execution begins
- * return: 0 sucess
+ * main - code begins
  * Return: 0 sucess
- *
  */
 
 int main(void)
@@ -12,15 +10,15 @@ int main(void)
 	int a[5];
 	int *p;
 
-	p[2] = 1024;
+	a[2] = 1024;
 	p = &n;
 	/*
 	 * write your line of code here...
 	 * Remember:
 	 * -you are not allowed to use a
-	 *  -you are not allowed to modify p
-	 *  -only one statement
-	 *  you are not allowed to code anything else than this line of code
+	 * -you are not allowed to modify p
+	 * -only one statement
+	 * -you are not allowed to code anything else than this line of code
 	 */
 	p[5] = 98;
 	/* ...so that this prints 98\n */
