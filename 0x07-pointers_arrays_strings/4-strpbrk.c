@@ -1,13 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strbrk - byte receive
+ * _strpbrk - byte receive
  * @s: pointer to char
  * @accept: pointer to char
  * Return: NULL
  */
 
-char *_strbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int j;
 
