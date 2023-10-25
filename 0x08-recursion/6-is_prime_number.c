@@ -8,7 +8,7 @@
 
 int is_prime_number(int n)
 {
-	return (chack_prime(n, 2));
+	return (check_prime(n, 2));
 }
 /**
  * check_prime - check all numbers less than n if divisible
