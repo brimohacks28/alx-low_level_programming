@@ -38,12 +38,12 @@ int main(int argc, char *argv[])
 	}
 	if (value % 5 >= 0)
 	{
-		z += value % 5;
+		z += value / 5;
 		value = value % 5;
 	}
 	if (value % 2 >= 0)
 	{
-		z += value % 2;
+		z += value / 2;
 		value = value % 2;
 	}
 	if (value % 1 >= 0)
