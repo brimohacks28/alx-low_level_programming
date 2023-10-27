@@ -1,23 +1,14 @@
-#include "main.h"
+#include <stdio.h>
+
 /**
- * main - code Execution  begins
- * commandline - whats my name
- * @argc: the no of commmand line args
- * @argv: An array of command line arguments
- *
+ * main - function starts
+ * @argc: offset count
+ * @argv: offset value
  * Return: 0 is sucess
  */
 
-int commandline(int argc, char *argv[])
-{
-	if (argc > 0 && argv[0] != NULL)
-       	{
-		printf("%s\n", argv[0]);
-	}
-	return(0);
-}
-
 int main(int argc, char *argv[])
 {
-	return commandline(argc, argv);
+	_putchar("%s\n", argv[argc - 1]);
+	return (0);
 }
