@@ -1,5 +1,6 @@
+#include "main.h"
 #include <stdio.h>
-
+#define passive(y) (void)(x)
 /**
  * main - Execution of code begins
  * @argc: offset count
@@ -10,6 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	printf("%s\n", argv[argc - 1]);
+	passive(argc);
+	printf("%s\n", argv[0]);
 	return (0);
 }
