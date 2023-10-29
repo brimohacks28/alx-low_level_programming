@@ -9,6 +9,10 @@
 
 int main(int argc, char *argv[])
 {
-	_putchar("%s\n", argv[argc - 1]);
+	if (argc < 1)
+	{
+		printf("Invalid\n");
+	}
+	printf("%s\n", argv[0]);
 	return (0);
 }
