@@ -17,10 +17,10 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		position = 0;
-		while (position < size) /*conditional*/
+		pos = 0;
+		while (pos < size) /*conditional*/
 		{
-			*(buffer + position) = c;
+			*(buffer + pos) = c;
 			pos++;
 		}
 		return (buffer);
