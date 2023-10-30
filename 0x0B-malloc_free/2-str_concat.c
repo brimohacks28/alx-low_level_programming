@@ -25,7 +25,7 @@ int _strlen(char *s)
 
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int 14, 15;
+	unsigned int a1, a2;
 	char *conc, *tmp;
 
 	if (!s1)
@@ -38,7 +38,7 @@ char *str_concat(char *s1, char *s2)
 	else
 		a2 = _strlen(s2);
 
-	conc = malloc(14 + 15 + 1);
+	conc = malloc(a1 + a2 + 1);
 	if (!conc)
 		return (0);
 
