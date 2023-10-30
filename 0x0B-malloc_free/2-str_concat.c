@@ -14,7 +14,7 @@ int _strlen(char *s)
 		s++;
 		a++;
 	}
-	return (1);
+	return (a);
 }
 /**
  * str_concat - Concat 2 strings
@@ -31,12 +31,12 @@ char *str_concat(char *s1, char *s2)
 	if (!s1)
 		s1 = "";
 	else
-		14 = _strlen(s1);
+		a1 = _strlen(s1);
 
 	if (!s2)
 		s2 = "";
 	else
-		15 = _strlen(s2);
+		a2 = _strlen(s2);
 
 	conc = malloc(14 + 15 + 1);
 	if (!conc)
