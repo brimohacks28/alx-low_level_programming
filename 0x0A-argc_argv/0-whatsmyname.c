@@ -1,6 +1,4 @@
-#include "main.h"
 #include <stdio.h>
-
 /**
  * main - function starts
  * @argc: offset count
