@@ -3,38 +3,35 @@
  * _realloc - reallocates a memory block using malloc and free
  * @ptr: pointer represent
  * @old_size: old size
- * @new_size: new size rep
- * j - Represents Counter
- *
- * Return: pointer
+ * @new_size: new size
+ * Return: pointer or NULL Sucess
  */
 
-void void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	char *clone, *relloc;
-	unsigned int j;
+	char *p;
+	unsigned int j, n = new_size;
+	char *oldp = ptr;
 
-	if (ptr != NULL)
-		clone = ptr;
-
-	else
+	if (ptr == NULL)
 	{
-	return (malloc(new_size));
+		p = malloc(new_size);
+		return (p);
 	}
-	if (new_size == old_size)
-		return (ptr);
-	if (new_size == 0 && ptr != NULL)
+	else if (new_size == 0)
 	{
 		free(ptr);
-		return (0);
+		return (NULL);
 	}
-	relloc = malloc(new_size);
-	if (relloc == NULL)
-		return (0);
-	for (j = 0; j < (old_size || j < new_size); j++)
-	{
-		*(relloc + j) = clone[j];
-	}
+	else if (new_size == old_size)
+		return (ptr);
+	p = malloc(new_size);
+	if (p == NULL)
+		return (NULL);
+	if (new_size > old_size)
+		n = old_size;
+	for (j = 0; j < n; j++)
+		p[j] = oldp[j];
 	free(ptr);
-	return (relloc);
+	return (p);
 }
