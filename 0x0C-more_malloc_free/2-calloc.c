@@ -2,19 +2,19 @@
 
 /**
  * _memset - copy char
- * @s: string
+ * @s: string represent
  * @b: input
- * @n: bytes
+ * @n: bytes representation
  * Return: string
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int k;
+	unsigned int i;
 
-	for (k = 0; k < n; k++)
+	for (i = 0; i < n; i++)
 	{
-		s[k] = b;
+		s[i] = b;
 	}
 	return (s);
 }
@@ -28,7 +28,7 @@ char *_memset(char *s, char b, unsigned int n)
 
 void *_calloc(usigned int nmemb, unsigned int size)
 {
-	void *p;
+	void *m;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
