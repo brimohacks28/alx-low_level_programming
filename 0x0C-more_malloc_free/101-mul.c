@@ -26,7 +26,7 @@ int _isNumber(char *argv)
 
 	for (a = 0; argv[a]; a++)
 		if (argv[a] < 48 || argv[a] > 57)
-			return (a);
+			return (1);
 	return (0);
 }
 /**
@@ -73,6 +73,14 @@ void *mul_array(char *a1, int len1, char a2, char *a3, int lena)
 		mul /= 10;
 		j--;
 	}
+		while (mul != 0)
+		{
+			mul += a3[j] - '0';
+			a3[k] = (mul % 10) + '0';
+			mul /= 10;
+			k--;
+		}
+
 	return (a3);
 }
 /**
