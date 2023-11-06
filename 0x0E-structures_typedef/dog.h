@@ -1,5 +1,5 @@
-#ifndef FILE_DOG
-#define FILE_DOG
+#ifndef _DOG_H_
+#define _DOG_H_
 /**
  * struct dog - structures dog
  * @name: attribute pointer to char name's dog
