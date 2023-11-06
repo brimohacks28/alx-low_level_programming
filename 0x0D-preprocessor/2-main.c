@@ -6,7 +6,7 @@
  * Return 0 is sucess"
  */
 
-int main (void)
+int main(void)
 {
 	printf("%s\n", __ FILE__);
 	return (0);
