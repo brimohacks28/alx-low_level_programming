@@ -19,15 +19,15 @@ int (*get_op_func(char *s))(int, int)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-	int j = 0;
+	int i = 0;
 
-	while (ops[j].op)
+	while (ops[i].op)
 	{
-		if (strcmp(s, ops[j].op) == 0)
+		if (strcmp(s, ops[i].op) == 0)
 		{
-			return (ops[j].f);
+			return (ops[i].f);
 		}
-		j++;
+		i++;
 	}
 	printf("Error\n");
 	exit(99);
