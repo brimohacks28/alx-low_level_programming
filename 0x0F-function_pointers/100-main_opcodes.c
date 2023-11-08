@@ -14,14 +14,14 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		printf("Error\n");
-		exit(!);
+		exit(1);
 	}
 	if (atoi(argv[1]) < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-	for (j = 0; j < atoi(argv[j]) - 1; j++)
+	for (j = 0; j < atoi(argv[1]) - 1; j++)
 		printf("%02hhx ", ((char *)main)[j]);
 	printf("%02hhx\n", ((char *)main)[j]);
 	return (0);
