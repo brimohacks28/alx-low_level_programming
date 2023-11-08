@@ -5,7 +5,7 @@
  * op_add - addition
  * @c: sumnd 1
  * @d: sumnd 2
- * Return: rsult
+ * Return: result
  */
 
 int op_add(int c, int d);
