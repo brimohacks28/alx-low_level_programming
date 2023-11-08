@@ -3,49 +3,49 @@
 
 /**
  * op_add - addition
- * @c: sumnd 1
- * @d: sumnd 2
+ * @a: sumnd 1
+ * @b: sumnd 2
  * Return: result
  */
 
-int op_add(int c, int d);
+int op_add(int a, int b);
 {
-	return (c + d);
+	return (a + b);
 }
 /**
  * op_sub - subtraction
- * @c: minuend
- * @d: sustrnd
+ * @a: minuend
+ * @b: sustrnd
  * Return: result
  */
 
-int op_sub(int c, int d)
+int op_sub(int a, int b)
 {
-	return (c - d);
+	return (a - b);
 }
 /**
  * op_mul - multiply
- * @c: mult 1
- * @d: multp 2
+ * @a: mult 1
+ * @b: multp 2
  * Return: result
  */
 
-int op_mul(int c, int d)
+int op_mul(int a, int b)
 {
-	return (c * d);
+	return (a * b);
 }
 /**
  * op_div - division
- * @c: divisor
- * @d: dividor
+ * @a: divisor
+ * @b: dividor
  * Return: Result
  */
 
-int op_div(int c, int d)
+int op_div(int a, int b)
 {
-	if (d)
+	if (b)
 	{
-		return (c / d);
+		return (a / b);
 	}
 	printf("Error\n");
 	exit(100);
@@ -53,16 +53,16 @@ int op_div(int c, int d)
 
 /**
  * op_mod - modulo
- * @c: vaper 1
- * @d: vaper 2
+ * @a: vaper 1
+ * @b: vaper 2
  * Return: result
  */
 
-int op_mod(int c, int d)
+int op_mod(int a, int b)
 {
-	if (d)
+	if (b)
 	{
-		return (c % d);
+		return (a % b);
 	}
 	printf("Error\n");
 	exit(100);
