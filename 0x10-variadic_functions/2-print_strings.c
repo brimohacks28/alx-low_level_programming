@@ -1,6 +1,5 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -17,7 +16,7 @@ void print_strings(const char *separator, const unisgned int n, ...)
 
 	va_start(strings, n);
 
-	for (index = 0; index < n; index++)
+	for (index = 0; index < n; index ++)
 	{
 		str = va_arg(strings, char *);
 
