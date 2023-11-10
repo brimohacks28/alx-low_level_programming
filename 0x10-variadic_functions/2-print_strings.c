@@ -9,7 +9,7 @@
  * @n: int, number of undefined arguments
  */
 
-void print_strings(const char *separator, const unisgned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list stringArgs;
