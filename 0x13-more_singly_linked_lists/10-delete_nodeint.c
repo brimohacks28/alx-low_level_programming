@@ -2,6 +2,8 @@
 
 /**
  * delete_nodeint_at_index - Deletes a node at a given index
+ * delete_nodeint_at_index - Deletes a node at a given index
+ * @index: Index
  * @head: Pointer to address of a list
  * Return: 1 on success, -1 if fail
  */
