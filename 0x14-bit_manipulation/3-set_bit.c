@@ -3,7 +3,7 @@
 /**
  * set_bit - Set the value of a bit to 1 at a given index
  * @n: Bit Being Evaluated
- * @ndex: Index, Starting from 0
+ * @index: Index, Starting from 0
  *
  * Return: 1 is sucess
  * -1 is error
